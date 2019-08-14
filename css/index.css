@@ -133,5 +133,52 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5% rem;
+}
+.container {
+  width: 60%;
   margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+/*************** VARIABLES AND MIX-INS ************************/
+/****************** ALL VARIABLES AND MIX-INS ABOVE **********************/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 12px 2%;
+}
+header {
+  margin: 15px 0;
+  background-color: whitesmoke;
+  padding: 62px 34px;
+}
+header .header-top {
+  border-bottom: 1px solid silver;
+}
+header .header-top img {
+  width: 32%;
+}
+header .header-top h1 {
+  font-size: 2.2rem;
+  margin: 15px 0;
+}
+header .header-top p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+header .header-bottom p {
+  margin: 15px 0;
+}
+header .header-bottom button {
+  background-color: darkgray;
+  color: white;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+  padding: 0.8%;
+  font-size: 1.3rem;
 }

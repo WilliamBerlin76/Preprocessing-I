@@ -50,11 +50,79 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
 	height: 100%;
-	margin: 0 auto;
+	font-size: 62.5%rem;
 }
 
+.container {
+	width: 60%;
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+}
+/*************** VARIABLES AND MIX-INS ************************/
+//Variables
+
+@lightgraycolor: whitesmoke;
+@darkgraycolor: darkgray;
+
+// Mix-ins
+
+.header-margins(){
+	margin:15px 0;
+}
+
+/****************** ALL VARIABLES AND MIX-INS ABOVE **********************/
+
+nav{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 15px;
+
+	a{
+		text-decoration: none;
+		color: black;
+		margin: 12px 2%;
+	}
+}
+
+header{
+	.header-margins();
+	background-color: @lightgraycolor;
+	padding: 62px 34px;
+	.header-top{
+		border-bottom: 1px solid silver;
+		img{
+			width: 32%;
+		}
+		h1{
+			font-size: 2.2rem;
+			.header-margins();
+		}
+		p{
+			font-size: 1.2rem;
+			.header-margins();
+		}
+	} //this ends .header-top
+	.header-bottom{
+		p{
+			.header-margins();
+		}
+		button{
+			background-color: @darkgraycolor;
+			color: white;
+			border: 1px solid @darkgraycolor;
+			border-radius: 2px;
+			padding: .8%;
+			font-size: 1.3rem;
+		}
+	}//this ends .header-bottom
+}//this ends header
+
+.top-content{
+	
+}
