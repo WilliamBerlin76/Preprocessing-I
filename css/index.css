@@ -140,6 +140,11 @@ body {
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
 /*************** VARIABLES AND MIX-INS ************************/
 /****************** ALL VARIABLES AND MIX-INS ABOVE **********************/
 nav {
@@ -151,6 +156,17 @@ nav a {
   text-decoration: none;
   color: black;
   margin: 12px 2%;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  nav a {
+    border-bottom: 1px solid whitesmoke;
+  }
 }
 header {
   margin: 15px 0;
@@ -208,6 +224,17 @@ header .header-bottom button {
   border: 1px solid whitesmoke;
   padding: 5%;
 }
+@media (max-width: 500px) {
+  .top-content {
+    flex-direction: column;
+  }
+  .top-content .box-1 {
+    width: 100%;
+  }
+  .top-content .box-2 {
+    width: 100%;
+  }
+}
 .bottom-content {
   margin-bottom: 3.5%;
 }
@@ -242,6 +269,11 @@ header .header-bottom button {
   padding-bottom: 5%;
   padding-left: 2%;
   border-top: 0.5px solid darkgray;
+}
+@media (max-width: 500px) {
+  .bottom-content p {
+    font-size: 0.8rem;
+  }
 }
 footer {
   color: white;
