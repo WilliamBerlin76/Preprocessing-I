@@ -208,3 +208,21 @@ header .header-bottom button {
   border: 1px solid whitesmoke;
   padding: 5%;
 }
+.bottom-content h2 {
+  font-size: 1.5rem;
+}
+.bottom-content .experience-chart {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-content h3 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-content .column-1 {
+  font-weight: bold;
+}
+.bottom-content .grey-bkg {
+  background-color: whitesmoke;
+}

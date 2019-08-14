@@ -75,6 +75,9 @@ html, body {
 .header-margins(){
 	margin:15px 0;
 }
+.bold-font(){
+	font-weight: bold;
+}
 
 /****************** ALL VARIABLES AND MIX-INS ABOVE **********************/
 
@@ -148,5 +151,27 @@ header{
 			border: 1px solid @lightgraycolor;
 			padding: 5%;
 		}
+	}// this ends .dox-2
+}// this ends .top-content
+
+.bottom-content{
+	
+	h2{
+		font-size: 1.5rem;
+	}
+	.experience-chart{
+		display:flex;
+		justify-content: space-between;
+	}
+	h3{
+		.bold-font();
+		display: flex;
+		flex-direction: column;
+	}
+	.column-1{
+		.bold-font();
+	}
+	.grey-bkg{
+		background-color: @lightgraycolor;
 	}
 }
