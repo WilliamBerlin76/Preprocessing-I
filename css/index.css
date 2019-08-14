@@ -208,6 +208,9 @@ header .header-bottom button {
   border: 1px solid whitesmoke;
   padding: 5%;
 }
+.bottom-content {
+  margin-bottom: 3.5%;
+}
 .bottom-content h2 {
   font-size: 1.5rem;
   margin: 15px 0;
@@ -239,4 +242,11 @@ header .header-bottom button {
   padding-bottom: 5%;
   padding-left: 2%;
   border-top: 0.5px solid darkgray;
+}
+footer {
+  color: white;
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  padding: 2% 0 4%;
 }
