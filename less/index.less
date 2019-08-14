@@ -78,6 +78,12 @@ html, body {
 .bold-font(){
 	font-weight: bold;
 }
+.chart-border-margins(){
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 2%;
+	border-top: .5px solid @darkgraycolor;
+}
 
 /****************** ALL VARIABLES AND MIX-INS ABOVE **********************/
 
@@ -158,20 +164,33 @@ header{
 	
 	h2{
 		font-size: 1.5rem;
+		.header-margins();
 	}
 	.experience-chart{
 		display:flex;
-		justify-content: space-between;
+		.header-margins();
+		div{
+			width: 100%;
+		}
 	}
 	h3{
 		.bold-font();
 		display: flex;
 		flex-direction: column;
+		.chart-border-margins();
 	}
 	.column-1{
 		.bold-font();
 	}
 	.grey-bkg{
 		background-color: @lightgraycolor;
+		
 	}
+	p{
+		.chart-border-margins();
+	}
+}//this ends .bottom-content
+
+footer{
+	
 }
