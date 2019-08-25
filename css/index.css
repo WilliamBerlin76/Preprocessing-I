@@ -164,9 +164,6 @@ nav a {
     align-items: center;
     width: 100%;
   }
-  nav a {
-    border-bottom: 1px solid whitesmoke;
-  }
 }
 header {
   margin: 15px 0;
@@ -197,6 +194,12 @@ header .header-bottom button {
   border-radius: 2px;
   padding: 0.8%;
   font-size: 1.3rem;
+}
+header .header-bottom button:hover {
+  background: whitesmoke;
+  color: darkgray;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .top-content {
   display: flex;
