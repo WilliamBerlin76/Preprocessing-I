@@ -106,7 +106,6 @@ nav{
 		width: 100%;
 		}
 	}
-}
 
 header{
 	.header-margins();
@@ -137,6 +136,12 @@ header{
 			border-radius: 2px;
 			padding: .8%;
 			font-size: 1.3rem;
+			&:hover{
+				background: @lightgraycolor;
+				color: @darkgraycolor;
+				transition: .5s;
+				cursor: pointer;
+			}
 		}
 	}//this ends .header-bottom
 }//this ends header
